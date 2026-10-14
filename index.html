@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ingrid Akariza's Computer Science portfolio, skills, experience and projects.">
+  <title>Ingrid Akariza | CS Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Photo section */
+    .photo-card {
+      width: 100%;
+      max-width: 320px;
+      margin: auto;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      background: white;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.10);
+    }
+
+    .photo-card img {
+      display: block;
+      width: 100%;
+      height: 330px;
+      object-fit: cover;
+      border-radius: 14px;
+    }
+
+    .photo-placeholder {
+      min-height: 280px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 20px;
+      text-align: center;
+      background: #f0efff;
+      border: 2px dashed #aaa4e8;
+      border-radius: 14px;
+      color: #49416f;
+    }
+
+    .photo-placeholder span {
+      font-size: 42px;
+    }
+
+    .photo-placeholder small {
+      line-height: 1.6;
+    }
+
+    .experience-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 25px;
+      border-radius: 16px;
+      background: var(--card-bg, #f8f7ff);
+      border: 1px solid #e5e1f5;
+    }
+
+    .experience-icon {
+      font-size: 32px;
+    }
+
+    .experience-card h3 {
+      margin-top: 0;
+    }
+
+    .experience-card p {
+      line-height: 1.8;
+    }
+
+    .contact-detail a {
+      color: inherit;
+    }
+
+    @media (max-width: 600px) {
+      .experience-card {
+        flex-direction: column;
+      }
+
+      .photo-card {
+        max-width: 260px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <a class="logo" href="#home">Ingrid<span>.</span></a>
+
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HOME SECTION -->
+    <section class="hero" id="home">
+
+      <div class="hero-content">
+        <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+
+        <h1>Hello, <span>I'm Ingrid</span></h1>
+        <h2>Computer Science Student</h2>
+
+        <p class="intro">
+          I am developing my skills in programming, web development,
+          databases and problem-solving. This portfolio showcases my
+          academic journey, practical experience and projects as I work
+          towards a future career in cybersecurity.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="button primary" href="#projects">
+            Explore My Work ↗
+          </a>
+
+          <a class="button secondary" href="#contact">
+            Contact Me
+          </a>
+        </div>
+      </div>
+
+      <!-- PHOTO SLOT -->
+      <div class="hero-art">
+        <div class="photo-card">
+
+          
+          <img
+            src="ingrid.jpg"
+            alt="Portrait of Ingrid Akariza"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          >
+
+          
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="section" id="about">
+
+      <div class="section-heading">
+        <p class="eyebrow">GET TO KNOW ME</p>
+        <h2>About <span>Me</span></h2>
+      </div>
+
+      <div class="about-card">
+
+        <div class="about-mark">CS<span>.</span></div>
+
+        <div>
+          <h3>A learner with a passion for technology</h3>
+
+          <p>
+            Hello! I'm Ingrid, a Computer Science student navigating my way through this interesting world of tech. I am developing my
+            skills in programming and web development, and I am interested
+            in creating websites that are useful, accessible and easy to use.
+          </p>
+
+          <p>
+            What interests me about technology is the combination of
+            creativity and problem-solving. I enjoy learning how softwares
+            work and turning ideas into practical projects. I am still
+            growing my technical skills through practice, coursework and
+            collaboration with others.
+          </p>
+
+          <p>
+            My goal is to build a strong foundation in Computer Science
+            and eventually pursue a career in cybersecurity. I believe
+            that patience, curiosity and consistent practice are important
+            parts of becoming a good developer.
+          </p>
+
+          <p>
+            Outside my studies, I enjoy listening to music and watching
+            movies in my free time. I also enjoy discovering new ideas
+            and learning things that help me grow.
+          </p>
+
+          <p class="detail">
+            <strong>Education:</strong> Uganda Christian University
+          </p>
+
+          <p class="detail">
+            <strong>Career interest:</strong> Cybersecurity and software development
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section" id="skills">
+
+      <div class="section-heading">
+        <p class="eyebrow">WHAT I'M LEARNING</p>
+        <h2>My <span>Skills</span></h2>
+        <p>Technologies and tools I am developing experience with.</p>
+      </div>
+
+      <div class="skill-grid">
+
+        <article class="skill-card">
+          <div class="skill-icon">C</div>
+          <h3>C Programming</h3>
+          <p>
+            Learning programming fundamentals, variables, input and output,
+            conditions, calculations and loops.
+          </p>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon">Py</div>
+          <h3>Python</h3>
+          <p>
+            Learning data analysis with python, which involves collecting, organising and 
+            presenting data using appropriate statistical methods and computational tools and 
+            using both Excel and programming python to load, analyse and visualise data in a 
+            reproducible workflow
+          </p>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon">&lt;/&gt;</div>
+          <h3>HTML</h3>
+          <p>
+            Creating the structure of web pages using headings, paragraphs,
+            links, images and sections.
+          </p>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon">CSS</div>
+          <h3>CSS</h3>
+          <p>
+            Styling websites, working with layouts and learning how to
+            make pages responsive on different screen sizes.
+          </p>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon">SQL</div>
+          <h3>MySQL & Databases</h3>
+          <p>
+            Learning about databases and how information can be organised
+            and stored for websites and applications.
+          </p>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon">Git</div>
+          <h3>Development Tools</h3>
+          <p>
+            Using VS Code and Code::Blocks, and learning to organise
+            projects and work with GitHub.
+          </p>
+        </article>
+
+      </div>
+
+      <p class="note">
+        I am continuing to develop these skills through academic work,
+        practice and personal projects.
+      </p>
+
+    </section>
+
+    <!-- DATA ENUMERATION EXPERIENCE -->
+    <section class="section" id="experience">
+
+      <div class="section-heading">
+        <p class="eyebrow">PRACTICAL EXPERIENCE</p>
+        <h2>Data <span>Enumeration</span></h2>
+        <p>Experience working with previously sourced data.</p>
+      </div>
+
+      <article class="experience-card">
+
+        <div class="experience-icon">▤</div>
+
+        <div>
+          <h3>Data Enumeration / Data Entry</h3>
+
+          <p>
+            Through an opportunity connected with the CDC, I gained
+            experience entering already sourced data into a system.
+            This gave me practical exposure to data handling and helped
+            me appreciate the importance of accuracy and careful
+            information entry.
+          </p>
+
+          <div class="tags">
+            <span>Data Entry</span>
+            <span>Data Handling</span>
+            <span>Attention to Detail</span>
+          </div>
+        </div>
+
+      </article>
+
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section" id="projects">
+
+      <div class="section-heading">
+        <p class="eyebrow">MY ACADEMIC WORK</p>
+        <h2>Featured <span>Projects</span></h2>
+        <p>Coursework and projects I am developing.</p>
+      </div>
+
+      <div class="project-grid">
+
+        <article class="project-card">
+          <div class="project-number">PROJECT 01</div>
+          <div class="project-symbol">&lt;C&gt;</div>
+
+          <h3>C Programming Exercises</h3>
+
+          <p>
+            A collection of beginner programs exploring user input,
+            calculations, conditional statements and loops.
+          </p>
+
+          <div class="tags">
+            <span>C</span>
+            <span>Problem-solving</span>
+          </div>
+
+          <a
+            class="project-link"
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Explore GitHub ↗
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">PROJECT 02</div>
+          <div class="project-symbol">+</div>
+
+          <h3>Malaria Tracking Website</h3>
+
+          <p>
+            An ongoing group project with classmates to develop a website
+            for presenting malaria information and supporting the reporting,
+            updating and tracking of malaria cases in Uganda.
+          </p>
+
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Database Planning</span>
+            <span>MySQL</span>
+          </div>
+
+          <p class="project-status">
+            Academic project in development
+          </p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">PROJECT 03</div>
+          <div class="project-symbol">∑</div>
+
+          <h3>Statistics & Data Analysis</h3>
+
+          <p>
+            Coursework involving descriptive statistics, data organisation
+            and introductory analysis using Excel and Python.
+          </p>
+
+          <div class="tags">
+            <span>Statistics</span>
+            <span>Excel</span>
+            <span>Python</span>
+          </div>
+
+          <p class="project-status">
+            Coursework and practice
+          </p>
+        </article>
+
+      </div>
+
+      <p class="note">
+      
+      </p>
+
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+
+      <p class="eyebrow">LET'S CONNECT</p>
+
+      <h2>
+        Thank you for visiting
+        <span>my portfolio.</span>
+      </h2>
+
+      <p>
+        I welcome opportunities to learn, collaborate and develop
+        my skills in technology.
+      </p>
+
+      <a class="button primary" href="mailto:ingridakariza@gmail.com">
+        Email Me ↗
+      </a>
+
+      <p class="contact-detail">
+        Email:
+        <a href="mailto:ingridakariza@gmail.com">
+          ingridakariza@gmail.com
+        </a>
+      </p>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>©  Ingrid Akariza · Student Portfolio</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+</body>
+</html>
